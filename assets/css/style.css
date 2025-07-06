@@ -1,0 +1,122 @@
+/* ZenAura - Global Styles */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #e1f5fe, #f1f8e9);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: linear-gradient(to right, #b2ebf2, #a5d6a7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: #004d40 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #00796b !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 2rem;
+  background: #fff;
+}
+
+.blockquote {
+  font-size: 1.2rem;
+  color: #555;
+  position: relative;
+}
+
+.blockquote-footer {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+header p.lead {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+/* Breathing Animation */
+#circle {
+  width: 150px;
+  height: 150px;
+  background-color: #a5d6a7;
+  border-radius: 50%;
+  animation: breathe 8s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes breathe {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.5); background-color: #81c784; }
+  100% { transform: scale(1); background-color: #a5d6a7; }
+}
+
+#text {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #333;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
