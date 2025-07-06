@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenAura - Inspirational Quotes</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<script src="assets/js/script.js"></script>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">ZenAura</a>
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+          <li class="nav-item"><a class="nav-link" href="breathing.html">Breathing</a></li>
+          <li class="nav-item"><a class="nav-link" href="games.html">Game</a></li>
+          <li class="nav-item"><a class="nav-link active" href="quotes.html">Quotes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-5">
+    <h1 class="display-5">💬 Inspirational Quotes</h1>
+    <p class="lead">Find peace and motivation through words</p>
+  </header>
+
+  <main class="container pb-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+<!-- 50 QUOTES START -->
+<script>
+const quotes = [
+  { text: "The best way out is always through.", author: "Robert Frost" },
+  { text: "You are not a drop in the ocean. You are the entire ocean in a drop.", author: "Rumi" },
+  { text: "Be where you are; otherwise you will miss your life.", author: "Thich Nhat Hanh" },
+  { text: "Happiness is not something ready made. It comes from your own actions.", author: "Dalai Lama" },
+  { text: "In the middle of difficulty lies opportunity.", author: "Albert Einstein" },
+  { text: "Peace comes from within. Do not seek it without.", author: "Buddha" },
+  { text: "The quieter you become, the more you are able to hear.", author: "Rumi" },
+  { text: "Breathe. Let go. And remind yourself that this very moment is the only one you know you have for sure.", author: "Oprah Winfrey" },
+  { text: "Simplicity is the ultimate sophistication.", author: "Leonardo da Vinci" },
+  { text: "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.", author: "Buddha" },
+  { text: "Let your soul stand cool and composed before a million universes.", author: "Walt Whitman" },
+  { text: "He who is contented is rich.", author: "Lao Tzu" },
+  { text: "The only journey is the one within.", author: "Rainer Maria Rilke" },
+  { text: "Stillness is where creativity and solutions to problems are found.", author: "Eckhart Tolle" },
+  { text: "Sometimes letting things go is an act of far greater power than defending or hanging on.", author: "Eckhart Tolle" },
+  { text: "Smile, breathe and go slowly.", author: "Thich Nhat Hanh" },
+  { text: "You don’t have to control your thoughts. You just have to stop letting them control you.", author: "Dan Millman" },
+  { text: "Mindfulness isn’t difficult. We just need to remember to do it.", author: "Sharon Salzberg" },
+  { text: "Your calm mind is the ultimate weapon against your challenges.", author: "Bryant McGill" },
+  { text: "Calm mind brings inner strength and self-confidence.", author: "Dalai Lama" },
+  { text: "To understand the immeasurable, the mind must be extraordinarily quiet, still.", author: "Jiddu Krishnamurti" },
+  { text: "Don't believe everything you think.", author: "Unknown" },
+  { text: "Awareness is the greatest agent for change.", author: "Eckhart Tolle" },
+  { text: "Serenity is not freedom from the storm, but peace amid the storm.", author: "Unknown" },
+  { text: "A calm and modest life brings more happiness than the pursuit of success combined with constant restlessness.", author: "Albert Einstein" },
+  { text: "Nothing can bring you peace but yourself.", author: "Ralph Waldo Emerson" },
+  { text: "He who lives in harmony with himself lives in harmony with the universe.", author: "Marcus Aurelius" },
+  { text: "The greatest wealth is to live content with little.", author: "Plato" },
+  { text: "Quiet the mind, and the soul will speak.", author: "Ma Jaya Sati Bhagavati" },
+  { text: "Life is a balance between holding on and letting go.", author: "Rumi" },
+  { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+  { text: "When you realize nothing is lacking, the whole world belongs to you.", author: "Lao Tzu" },
+  { text: "The soul always knows what to do to heal itself. The challenge is to silence the mind.", author: "Caroline Myss" },
+  { text: "Do every act of your life as though it were the very last act of your life.", author: "Marcus Aurelius" },
+  { text: "Silence is a source of great strength.", author: "Lao Tzu" },
+  { text: "The greatest step towards a life of simplicity is to learn to let go.", author: "Steve Maraboli" },
+  { text: "The time to relax is when you don’t have time for it.", author: "Sydney J. Harris" },
+  { text: "True happiness is... to enjoy the present, without anxious dependence upon the future.", author: "Lucius Annaeus Seneca" },
+  { text: "Be like a tree and let the dead leaves drop.", author: "Rumi" },
+  { text: "Almost everything will work again if you unplug it for a few minutes… including you.", author: "Anne Lamott" },
+  { text: "Don’t try to calm the storm. Calm yourself, the storm will pass.", author: "Unknown" },
+  { text: "Calmness is the cradle of power.", author: "Josiah Gilbert Holland" },
+  { text: "Only in quiet waters do things mirror themselves undistorted.", author: "Hans Margolius" },
+  { text: "There is a calmness to a life lived in gratitude.", author: "Ralph H. Blum" },
+  { text: "Be patient. Everything comes to you in the right moment.", author: "Buddha" },
+  { text: "Your worst enemy cannot harm you as much as your unguarded thoughts.", author: "Buddha" },
+  { text: "Sometimes the most productive thing you can do is relax.", author: "Mark Black" },
+  { text: "Everything that has a beginning has an ending. Make your peace with that and all will be well.", author: "Jack Kornfield" },
+  { text: "The mind is everything. What you think you become.", author: "Buddha" }
+];
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.row');
+  quotes.forEach(q => {
+    const col = document.createElement('div');
+    col.className = 'col';
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <blockquote class="blockquote mb-0">
+            <p>"${q.text}"</p>
+            <footer class="blockquote-footer mt-2">${q.author}</footer>
+          </blockquote>
+        </div>
+      </div>
+    `;
+    container.appendChild(col);
+  });
+});
+</script>
+<!-- 50 QUOTES END -->
+
+    </div>
+  </main>
+
+  <footer class="text-center py-4 text-muted">
+    &copy; 2025 ZenAura. Published By Aju Krishna. All rights reserved.
+  </footer>
+
+  <audio id="bgAudio" autoplay loop muted hidden>
+  <source src="assets/audio/calm.mp3" type="audio/mpeg">
+  </audio>
+
+<script>
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('bgAudio');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenAura - Relaxing Sounds</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<script src="assets/js/script.js"></script>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">🎵 ZenAura - Relaxing Sounds</h1>
+    <p class="text-center mb-5 text-muted">Click to play your favorite calming sound</p>
+    <p class="text-center mb-6">Put Headphones and Feel It</p>
+
+    <div class="row g-4">
+
+      <!-- Audio Card Template -->
+      <!-- Repeat this block for each sound -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Rain</h5>
+            <audio id="rain" src="assets/audio/rain.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('rain')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('rain')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ocean -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Ocean</h5>
+            <audio id="ocean" src="assets/audio/ocean.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('ocean')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('ocean')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forest -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Forest</h5>
+            <audio id="forest" src="assets/audio/forest.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('forest')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('forest')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Campfire -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Campfire</h5>
+            <audio id="campfire" src="assets/audio/campfire.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('campfire')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('campfire')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- River -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">River</h5>
+            <audio id="river" src="assets/audio/river.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('river')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('river')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Windchimes -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Windchimes</h5>
+            <audio id="windchimes" src="assets/audio/windchimes.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('windchimes')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('windchimes')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Night -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Night</h5>
+            <audio id="night" src="assets/audio/night.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('night')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('night')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wind -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Wind</h5>
+            <audio id="wind" src="assets/audio/wind.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('wind')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('wind')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rain on Window -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Rain on Window</h5>
+            <audio id="rain_window" src="assets/audio/rain_window.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('rain_window')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('rain_window')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tibetan Singing Bowl -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Singing Bowl</h5>
+            <audio id="singing_bowl" src="assets/audio/singing_bowl.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('singing_bowl')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('singing_bowl')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morning Birds -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Morning Birds</h5>
+            <audio id="morning_birds" src="assets/audio/morning_birds.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('morning_birds')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('morning_birds')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ambient Pad -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Ambient Pad</h5>
+            <audio id="ambient_pad" src="assets/audio/ambient_pad.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('ambient_pad')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('ambient_pad')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thunderstorm -->
+      <div class="col-md-4">
+        <div class="card shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Thunderstorm</h5>
+            <audio id="thunderstorm" src="assets/audio/thunderstorm.mp3"></audio>
+            <button class="btn btn-primary me-2" onclick="playAudio('thunderstorm')">▶ Play</button>
+            <button class="btn btn-outline-secondary" onclick="pauseAudio('thunderstorm')">⏸ Pause</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function playAudio(id) {
+      const audios = document.querySelectorAll("audio");
+      audios.forEach(audio => {
+        if (audio.id !== id) audio.pause(); // Stop others
+      });
+      document.getElementById(id).play();
+    }
+
+    function pauseAudio(id) {
+      document.getElementById(id).pause();
+    }
+  </script>
+
+  <footer class="text-center py-4 text-muted">
+    &copy; 2025 ZenAura. Published By Aju Krishna. All rights reserved.
+  </footer>
+
+</body>
+</html>

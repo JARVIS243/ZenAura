@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenAura - Breathing</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #e0f7fa, #e1bee7);
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #circle {
+      width: 150px;
+      height: 150px;
+      background-color: #a5d6a7;
+      border-radius: 50%;
+      animation: breathe 8s ease-in-out infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes breathe {
+      0%   { transform: scale(1); background-color: #aed581; }
+      50%  { transform: scale(1.5); background-color: #81c784; }
+      100% { transform: scale(1); background-color: #aed581; }
+    }
+
+    #text {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      color: #333;
+      text-align: center;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Deep Breathing</h1>
+  <div id="circle"></div>
+  <div id="text">Breathe In</div>
+
+  <script>
+    const text = document.getElementById('text');
+    const circle = document.getElementById('circle');
+
+    function breathingCycle() {
+      text.textContent = 'Breathe In';
+      circle.style.backgroundColor = '#81c784';
+
+      setTimeout(() => {
+        text.textContent = 'Breathe Out';
+        circle.style.backgroundColor = '#a5d6a7';
+      }, 4000);
+    }
+
+    breathingCycle(); // Initial run
+    setInterval(breathingCycle, 8000); // Every 8 seconds
+  </script>
+
+  <audio id="bgAudio" autoplay loop muted hidden>
+  <source src="assets/audio/calm.mp3" type="audio/mpeg">
+  </audio>
+
+<script>
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('bgAudio');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+</script>
+
+  <footer class="text-center py-4 text-muted">
+    &copy; 2025 ZenAura. Published By Aju Krishna. All rights reserved.
+  </footer>
+
+</body>
+</html>

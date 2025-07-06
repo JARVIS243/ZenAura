@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenAura - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/logo.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <!-- ✅ Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">ZenAura</a>
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
+          <li class="nav-item"><a class="nav-link" href="breathing.html">Breathing</a></li>
+          <li class="nav-item"><a class="nav-link" href="games.html">Game</a></li>
+          <li class="nav-item"><a class="nav-link" href="quotes.html">Quotes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <header class="text-center py-5">
+    <h1 class="fade-in">Welcome to ZenAura</h1>
+    <p class="lead fade-in">Your digital escape from stress ✨</p>
+    <p id="dailyPrompt" class="fade-in" style="font-size: 1.1rem; margin-top: 20px; color: #555;"></p>
+  </header>
+
+  <!-- ✅ Main Buttons -->
+  <main class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-4"><a class="btn btn-outline-primary w-100 py-3" href="music.html">🎵 Relaxing Music</a></div>
+      <div class="col-md-4"><a class="btn btn-outline-success w-100 py-3" href="meditation.html">🧘 Meditation</a></div>
+      <div class="col-md-4"><a class="btn btn-outline-warning w-100 py-3" href="breathing.html">🌬 Breathing</a></div>
+      <div class="col-md-6"><a class="btn btn-outline-info w-100 py-3" href="games.html">🎮 Anti-Stress Game</a></div>
+      <div class="col-md-6"><a class="btn btn-outline-dark w-100 py-3" href="quotes.html">💬 Quotes</a></div>
+    </div>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 ZenAura. Published By Aju Krishna. All rights reserved.
+  </footer>
+
+  <!-- ✅ Background Music -->
+  <audio id="bgAudio" autoplay loop muted hidden>
+    <source src="assets/audio/calm.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ✅ Scripts -->
+  <script>
+    // Enable music after first click
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('bgAudio');
+      if (audio) {
+        audio.muted = false;
+        audio.play();
+      }
+    }, { once: true });
+
+    // Daily prompt
+    const prompts = [
+      "Take 3 deep breaths before scrolling.",
+      "Smile for 10 seconds.",
+      "Notice 3 colors around you.",
+      "Put your phone down for 1 minute.",
+      "Stretch your arms and relax your shoulders.",
+      "Breathe in calm, breathe out stress.",
+      "Sit still for 10 seconds. Just be.",
+      "Notice one sound in your environment.",
+      "Blink slowly and relax your eyes.",
+      "Straighten your back and relax your jaw."
+    ];
+    const promptEl = document.getElementById("dailyPrompt");
+    if (promptEl) {
+      promptEl.textContent = prompts[Math.floor(Math.random() * prompts.length)];
+    }
+  </script>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
